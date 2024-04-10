@@ -40,20 +40,19 @@ namespace Game_Library
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelShowGames = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxTTT = new System.Windows.Forms.PictureBox();
             this.pictureBoxRPS = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelGame2 = new System.Windows.Forms.Label();
             this.buttonGame2 = new System.Windows.Forms.Button();
             this.labelGame1 = new System.Windows.Forms.Label();
             this.buttonGame1 = new System.Windows.Forms.Button();
             this.panelShowLibrary = new System.Windows.Forms.Panel();
-            this.labelLibraryGame2 = new System.Windows.Forms.Label();
-            this.labelLibraryGame1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.labelEmptyLibrary = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelShowGames.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTTT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRPS)).BeginInit();
             this.panelShowLibrary.SuspendLayout();
             this.SuspendLayout();
@@ -87,6 +86,7 @@ namespace Game_Library
             this.buttonStrategy.Text = "Strategy";
             this.buttonStrategy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonStrategy.UseVisualStyleBackColor = true;
+            this.buttonStrategy.Click += new System.EventHandler(this.buttonStrategy_Click);
             // 
             // buttonPuzzle
             // 
@@ -102,6 +102,7 @@ namespace Game_Library
             this.buttonPuzzle.Text = "Puzzle";
             this.buttonPuzzle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonPuzzle.UseVisualStyleBackColor = true;
+            this.buttonPuzzle.Click += new System.EventHandler(this.buttonPuzzle_Click);
             // 
             // buttonArcade
             // 
@@ -117,6 +118,7 @@ namespace Game_Library
             this.buttonArcade.Text = "Arcade";
             this.buttonArcade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonArcade.UseVisualStyleBackColor = true;
+            this.buttonArcade.Click += new System.EventHandler(this.buttonArcade_Click);
             // 
             // buttonFilter
             // 
@@ -188,9 +190,9 @@ namespace Game_Library
             // 
             // panelShowGames
             // 
-            this.panelShowGames.Controls.Add(this.pictureBox1);
+            this.panelShowGames.Controls.Add(this.pictureBoxTTT);
             this.panelShowGames.Controls.Add(this.pictureBoxRPS);
-            this.panelShowGames.Controls.Add(this.label2);
+            this.panelShowGames.Controls.Add(this.labelGame2);
             this.panelShowGames.Controls.Add(this.buttonGame2);
             this.panelShowGames.Controls.Add(this.labelGame1);
             this.panelShowGames.Controls.Add(this.buttonGame1);
@@ -199,15 +201,15 @@ namespace Game_Library
             this.panelShowGames.Size = new System.Drawing.Size(566, 466);
             this.panelShowGames.TabIndex = 1;
             // 
-            // pictureBox1
+            // pictureBoxTTT
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(218, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 175);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxTTT.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxTTT.Image")));
+            this.pictureBoxTTT.Location = new System.Drawing.Point(218, 14);
+            this.pictureBoxTTT.Name = "pictureBoxTTT";
+            this.pictureBoxTTT.Size = new System.Drawing.Size(175, 175);
+            this.pictureBoxTTT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxTTT.TabIndex = 3;
+            this.pictureBoxTTT.TabStop = false;
             // 
             // pictureBoxRPS
             // 
@@ -219,15 +221,15 @@ namespace Game_Library
             this.pictureBoxRPS.TabIndex = 2;
             this.pictureBoxRPS.TabStop = false;
             // 
-            // label2
+            // labelGame2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label2.Location = new System.Drawing.Point(247, 192);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tic Tac Toe";
+            this.labelGame2.AutoSize = true;
+            this.labelGame2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.labelGame2.Location = new System.Drawing.Point(247, 192);
+            this.labelGame2.Name = "labelGame2";
+            this.labelGame2.Size = new System.Drawing.Size(118, 25);
+            this.labelGame2.TabIndex = 1;
+            this.labelGame2.Text = "Tic Tac Toe";
             // 
             // buttonGame2
             // 
@@ -261,33 +263,12 @@ namespace Game_Library
             // 
             // panelShowLibrary
             // 
-            this.panelShowLibrary.Controls.Add(this.labelLibraryGame2);
-            this.panelShowLibrary.Controls.Add(this.labelLibraryGame1);
+            this.panelShowLibrary.Controls.Add(this.labelEmptyLibrary);
             this.panelShowLibrary.Controls.Add(this.label3);
             this.panelShowLibrary.Location = new System.Drawing.Point(169, -2);
             this.panelShowLibrary.Name = "panelShowLibrary";
             this.panelShowLibrary.Size = new System.Drawing.Size(566, 466);
             this.panelShowLibrary.TabIndex = 2;
-            // 
-            // labelLibraryGame2
-            // 
-            this.labelLibraryGame2.AutoSize = true;
-            this.labelLibraryGame2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.labelLibraryGame2.Location = new System.Drawing.Point(11, 182);
-            this.labelLibraryGame2.Name = "labelLibraryGame2";
-            this.labelLibraryGame2.Size = new System.Drawing.Size(64, 25);
-            this.labelLibraryGame2.TabIndex = 1;
-            this.labelLibraryGame2.Text = "label4";
-            // 
-            // labelLibraryGame1
-            // 
-            this.labelLibraryGame1.AutoSize = true;
-            this.labelLibraryGame1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.labelLibraryGame1.Location = new System.Drawing.Point(11, 136);
-            this.labelLibraryGame1.Name = "labelLibraryGame1";
-            this.labelLibraryGame1.Size = new System.Drawing.Size(64, 25);
-            this.labelLibraryGame1.TabIndex = 1;
-            this.labelLibraryGame1.Text = "label4";
             // 
             // label3
             // 
@@ -299,13 +280,23 @@ namespace Game_Library
             this.label3.TabIndex = 0;
             this.label3.Text = "My games";
             // 
+            // labelEmptyLibrary
+            // 
+            this.labelEmptyLibrary.AutoSize = true;
+            this.labelEmptyLibrary.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.labelEmptyLibrary.Location = new System.Drawing.Point(11, 75);
+            this.labelEmptyLibrary.Name = "labelEmptyLibrary";
+            this.labelEmptyLibrary.Size = new System.Drawing.Size(525, 25);
+            this.labelEmptyLibrary.TabIndex = 1;
+            this.labelEmptyLibrary.Text = "Empty library. Go to Games tab to add games to your library";
+            // 
             // FormGames
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(733, 461);
-            this.Controls.Add(this.panelShowGames);
             this.Controls.Add(this.panelShowLibrary);
+            this.Controls.Add(this.panelShowGames);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -316,7 +307,7 @@ namespace Game_Library
             this.panel2.PerformLayout();
             this.panelShowGames.ResumeLayout(false);
             this.panelShowGames.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTTT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRPS)).EndInit();
             this.panelShowLibrary.ResumeLayout(false);
             this.panelShowLibrary.PerformLayout();
@@ -339,13 +330,12 @@ namespace Game_Library
         private System.Windows.Forms.Label labelGame1;
         private System.Windows.Forms.Button buttonGame1;
         private System.Windows.Forms.Panel panelShowLibrary;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelGame2;
         private System.Windows.Forms.Button buttonGame2;
         private System.Windows.Forms.PictureBox pictureBoxRPS;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxTTT;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label labelLibraryGame1;
-        private System.Windows.Forms.Label labelLibraryGame2;
+        private System.Windows.Forms.Label labelEmptyLibrary;
     }
 }
 
