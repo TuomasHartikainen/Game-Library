@@ -34,10 +34,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.buttonStart = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelComputerScore = new System.Windows.Forms.Label();
+            this.labelPlayerScore = new System.Windows.Forms.Label();
+            this.labelWinner = new System.Windows.Forms.Label();
+            this.labelComputerChoice = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonRock
@@ -100,55 +100,55 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Score:";
             // 
-            // label3
+            // labelComputerScore
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(327, 72);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 17);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Computer - 0";
+            this.labelComputerScore.AutoSize = true;
+            this.labelComputerScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.labelComputerScore.Location = new System.Drawing.Point(327, 72);
+            this.labelComputerScore.Name = "labelComputerScore";
+            this.labelComputerScore.Size = new System.Drawing.Size(90, 17);
+            this.labelComputerScore.TabIndex = 6;
+            this.labelComputerScore.Text = "Computer - 0";
             // 
-            // label4
+            // labelPlayerScore
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(327, 89);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Player - 0";
+            this.labelPlayerScore.AutoSize = true;
+            this.labelPlayerScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.labelPlayerScore.Location = new System.Drawing.Point(327, 89);
+            this.labelPlayerScore.Name = "labelPlayerScore";
+            this.labelPlayerScore.Size = new System.Drawing.Size(69, 17);
+            this.labelPlayerScore.TabIndex = 7;
+            this.labelPlayerScore.Text = "Player - 0";
             // 
-            // label5
+            // labelWinner
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label5.Location = new System.Drawing.Point(10, 159);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 25);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Winner: ";
+            this.labelWinner.AutoSize = true;
+            this.labelWinner.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.labelWinner.Location = new System.Drawing.Point(10, 159);
+            this.labelWinner.Name = "labelWinner";
+            this.labelWinner.Size = new System.Drawing.Size(86, 25);
+            this.labelWinner.TabIndex = 8;
+            this.labelWinner.Text = "Winner: ";
             // 
-            // label6
+            // labelComputerChoice
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.Location = new System.Drawing.Point(12, 132);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 17);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Computers choice:";
+            this.labelComputerChoice.AutoSize = true;
+            this.labelComputerChoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.labelComputerChoice.Location = new System.Drawing.Point(12, 132);
+            this.labelComputerChoice.Name = "labelComputerChoice";
+            this.labelComputerChoice.Size = new System.Drawing.Size(125, 17);
+            this.labelComputerChoice.TabIndex = 9;
+            this.labelComputerChoice.Text = "Computers choice:";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 191);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(424, 191);
+            this.Controls.Add(this.labelComputerChoice);
+            this.Controls.Add(this.labelWinner);
+            this.Controls.Add(this.labelPlayerScore);
+            this.Controls.Add(this.labelComputerScore);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.label1);
@@ -171,9 +171,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelComputerScore;
+        private System.Windows.Forms.Label labelPlayerScore;
+        private System.Windows.Forms.Label labelWinner;
+        private System.Windows.Forms.Label labelComputerChoice;
     }
 }

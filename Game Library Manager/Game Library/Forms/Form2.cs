@@ -38,16 +38,19 @@ namespace Game_Library.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             playerChoice = 1;
+            gameStart();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             playerChoice = 2;
+            gameStart();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             playerChoice = 3;
+            gameStart();
         }
 
         private void gameStart()
@@ -81,6 +84,27 @@ namespace Game_Library.Forms
                     computerChoiceStr = "Scissors";
                     break;
             }
+
+            if (playerChoice == computerChoice)
+            {
+                winner = "Tie";
+            }
+            else if ((playerChoice == 1 && computerChoice == 3) || (playerChoice == 2 && computerChoice == 1) || (playerChoice == 3 && computerChoice == 2))
+            {
+                playerScore++;
+                winner = "Player wins";
+            }
+            else 
+            {
+                computerScore++;
+                winner = "Computer wins";
+            }
+
+            labelComputerChoice.Text = "Computers choice: " + computerChoiceStr;
+            labelWinner.Text = winner;
+            labelComputerScore.Text = "Computer - " + computerScore;
+            labelPlayerScore.Text = "Player - " + playerScore;
+            buttonStart.Focus();
         }
     }
 }
