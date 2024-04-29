@@ -10,6 +10,8 @@ Game store
 Library
 
 ![GLM2](https://github.com/TuomasHartikainen/Game-Library/assets/164089057/aa3e9506-2515-41a4-a350-703a75f3b3f4)
+## Game Library Manager flowchart
+![GLM drawio](https://github.com/TuomasHartikainen/Game-Library/assets/164089057/b5e19178-7548-4915-ba82-1f200f055ca8)
 ## Coding
 The code in the main library application let's us add games to our library and by that it gives us a message through a messagebox and shows the game in the library. You can play the game which opens a new window with the game. Here's an example code of adding games to library and playing
 ```
