@@ -1,7 +1,7 @@
 # How to install and use the application
 Firstly download the files from GitHub to your machine. Open and navigate to Setup-SetupFiles folder: ..\Game Library Manager\Setup\Setup-SetupFiles and launch Setup.exe file. After done with the Setup Wizard open the application on your desktop
 
-The application is a library with games that you can play. After launching the application you will be directed to the 'store page' where you can add games to your library. To play them just go to User library section and you will see games that you added to the library. Just simply press Play game button. If you want to remove a game, simply press Remove game from your library button. That's it, enjoy! :D
+The application is a library with games that you can play. After launching the application you will be directed to the 'store page' where you can add games to your library. To play them just go to User library section and you will see games that you added to the library. Just simply press Play game button. If you want to remove a game, simply press Remove game from your library button. That should be it, enjoy! :D
 ## Screenshots from the application
 Game store
 
@@ -25,14 +25,14 @@ private void AddGameToLibrary(int i)
 private void buttonLibraryGamePlay_Click(object sender, EventArgs e)
 {
     Button clickedButton = (Button)sender;
-    int i = int.Parse(clickedButton.Name.Replace("buttonLibraryGamePlay", "")); //Looks at which button was pressed
+    int i = int.Parse(clickedButton.Name.Replace("buttonLibraryGamePlay", "")); //Looks which button was pressed
     string gameName = games[i].Name;
     if (gameName == "Rock Paper Scissors") //If the pressed button name was Rock Paper Scissors then it starts the right game
     {
         Form2 form2 = new Form2();
         form2.ShowDialog();
     }
-    else if (gameName == "Tic Tac Toe") Else if the pressed button name was Tic Tac Toe then it starts the right game
+    else if (gameName == "Tic Tac Toe") //Else if the pressed button name was Tic Tac Toe then it starts the right game
     {
         Form3 form3 = new Form3();
         form3.ShowDialog();
