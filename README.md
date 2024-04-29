@@ -1,5 +1,5 @@
 # How to install and use the application
-Firstly download the files from GitHub to your machine. Open and navigate to Setup-SetupFiles folder: ..\Game Library Manager\Setup\Setup-SetupFiles. After done with the Setup Wizard open the application on your desktop
+Firstly download the files from GitHub to your machine. Open and navigate to Setup-SetupFiles folder: ..\Game Library Manager\Setup\Setup-SetupFiles and lauch Setup.exe file. After done with the Setup Wizard open the application on your desktop
 
 The application is a library with games that you can play. After launching the application you will be directed to the 'store page' where you can add game to your library. To play them just go to User library section and you will see game that you added to the library. Just simply press Play game button. If you want to remove the game, simply press Remove game from your library button. That's it, enjoy! :D
 ## Screenshots from the application
