@@ -38,8 +38,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelXScore = new System.Windows.Forms.Label();
+            this.labelOScore = new System.Windows.Forms.Label();
             this.buttonStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -134,25 +134,25 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "SCORE";
             // 
-            // label2
+            // labelXScore
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label2.Location = new System.Drawing.Point(4, 376);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 46);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "X: 0";
+            this.labelXScore.AutoSize = true;
+            this.labelXScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.labelXScore.Location = new System.Drawing.Point(4, 376);
+            this.labelXScore.Name = "labelXScore";
+            this.labelXScore.Size = new System.Drawing.Size(91, 46);
+            this.labelXScore.TabIndex = 3;
+            this.labelXScore.Text = "X: 0";
             // 
-            // label3
+            // labelOScore
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label3.Location = new System.Drawing.Point(229, 376);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 46);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "O: 0";
+            this.labelOScore.AutoSize = true;
+            this.labelOScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.labelOScore.Location = new System.Drawing.Point(229, 376);
+            this.labelOScore.Name = "labelOScore";
+            this.labelOScore.Size = new System.Drawing.Size(95, 46);
+            this.labelOScore.TabIndex = 4;
+            this.labelOScore.Text = "O: 0";
             // 
             // buttonStart
             // 
@@ -170,8 +170,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 431);
             this.Controls.Add(this.buttonStart);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelOScore);
+            this.Controls.Add(this.labelXScore);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button9);
@@ -182,6 +182,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form3";
             this.Text = "Tic Tac Toe";
             this.ResumeLayout(false);
@@ -201,8 +203,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelXScore;
+        private System.Windows.Forms.Label labelOScore;
         private System.Windows.Forms.Button buttonStart;
     }
 }

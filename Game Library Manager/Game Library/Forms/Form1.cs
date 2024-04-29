@@ -9,6 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using Newtonsoft.Json;
+using System.Xml.Serialization;
 
 namespace Game_Library
 {
@@ -17,7 +20,7 @@ namespace Game_Library
         List<string> gameName = new List<string>() { "Rock Paper Scissors", "Tic Tac Toe" };
         List<Game> games = new List<Game>
         {
-            new Game { Name = "Rock Paper Scrissors", Description = "A classic two-person hand game", Genre = "Arcade"},
+            new Game { Name = "Rock Paper Scissors", Description = "A classic two-person hand game", Genre = "Arcade"},
             new Game { Name = "Tic Tac Toe", Description = "A classic paper and pencil game", Genre = "Strategy"}
         };
 
@@ -73,16 +76,20 @@ namespace Game_Library
 
         private void buttonGame1_Click(object sender, EventArgs e)
         {
-            int i = 0;
+            Button clickedButton = (Button)sender;
+            this.buttonGame1.Tag = 0;
+            int i = (int)clickedButton.Tag;
             AddGameToLibrary(i);
-            buttonGame1.Enabled = false;
+            clickedButton.Enabled = false;
         }
 
         private void buttonGame2_Click(object sender, EventArgs e)
         {
-            int i = 1;
+            Button clickedButton = (Button)sender;
+            this.buttonGame2.Tag = 1;
+            int i = (int)clickedButton.Tag;
             AddGameToLibrary(i);
-            buttonGame2.Enabled = false;
+            clickedButton.Enabled = false;
         }
 
         private void buttonLibraryGameRemove_Click(object sender, EventArgs e)
@@ -101,11 +108,10 @@ namespace Game_Library
 
         private void AddGameToLibrary(int i)
         {
-            labelEmptyLibrary.Visible = false;
-            MessageBox.Show($"Added {games[i].Name} to your library");
-            DisplayGameInLibrary(i);
+                labelEmptyLibrary.Visible = false;
+                MessageBox.Show($"Added {games[i].Name} to your library");
+                DisplayGameInLibrary(i);
         }
-
         private void RemoveGameFromLibrary(int i)
         {
             foreach (Control tempCtrl in panelShowLibrary.Controls)
@@ -203,12 +209,13 @@ namespace Game_Library
         {
             Button clickedButton = (Button)sender;
             int i = int.Parse(clickedButton.Name.Replace("buttonLibraryGamePlay", ""));
-            if (gameName[i] == "Rock Paper Scissors")
+            string gameName = games[i].Name;
+            if (gameName == "Rock Paper Scissors")
             {
                 Form2 form2 = new Form2();
                 form2.ShowDialog();
             }
-            else if (gameName[i] == "Tic Tac Toe")
+            else if (gameName == "Tic Tac Toe")
             {
                 Form3 form3 = new Form3();
                 form3.ShowDialog();

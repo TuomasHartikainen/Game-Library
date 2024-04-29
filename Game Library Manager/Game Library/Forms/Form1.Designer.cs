@@ -47,8 +47,9 @@ namespace Game_Library
             this.labelGame1 = new System.Windows.Forms.Label();
             this.buttonGame1 = new System.Windows.Forms.Button();
             this.panelShowLibrary = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.labelEmptyLibrary = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelShowGames.SuspendLayout();
@@ -172,6 +173,7 @@ namespace Game_Library
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -182,7 +184,7 @@ namespace Game_Library
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MV Boli", 25F);
-            this.label1.Location = new System.Drawing.Point(14, 25);
+            this.label1.Location = new System.Drawing.Point(31, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 45);
             this.label1.TabIndex = 0;
@@ -270,16 +272,6 @@ namespace Game_Library
             this.panelShowLibrary.Size = new System.Drawing.Size(566, 466);
             this.panelShowLibrary.TabIndex = 2;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label3.Location = new System.Drawing.Point(7, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 31);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "My games";
-            // 
             // labelEmptyLibrary
             // 
             this.labelEmptyLibrary.AutoSize = true;
@@ -290,11 +282,31 @@ namespace Game_Library
             this.labelEmptyLibrary.TabIndex = 1;
             this.labelEmptyLibrary.Text = "Empty library. Go to Games tab to add games to your library";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label3.Location = new System.Drawing.Point(7, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(138, 31);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "My games";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("MV Boli", 10F);
+            this.label2.Location = new System.Drawing.Point(7, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(158, 18);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Game Library Manager";
+            // 
             // FormGames
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(733, 461);
+            this.ClientSize = new System.Drawing.Size(734, 461);
             this.Controls.Add(this.panelShowLibrary);
             this.Controls.Add(this.panelShowGames);
             this.Controls.Add(this.panel1);
@@ -336,6 +348,7 @@ namespace Game_Library
         private System.Windows.Forms.PictureBox pictureBoxTTT;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelEmptyLibrary;
+        private System.Windows.Forms.Label label2;
     }
 }
 

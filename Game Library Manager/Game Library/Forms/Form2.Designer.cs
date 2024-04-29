@@ -155,6 +155,8 @@
             this.Controls.Add(this.buttonScissors);
             this.Controls.Add(this.buttonPaper);
             this.Controls.Add(this.buttonRock);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form2";
             this.Text = "Rock paper scissors";
             this.Shown += new System.EventHandler(this.Form2_Shown);

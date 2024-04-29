@@ -193,12 +193,14 @@ namespace Game_Library.Forms
                     {
                         MessageBox.Show("Winner is O");
                         oScore++;
+                        labelOScore.Text = "O: " + oScore;
                         ClearBoard();
                     }
                     if (btns[1, i].Text == "O" && btns[2, i].Text == "O" && btns[3, i].Text == "O")
                     {
                         MessageBox.Show("Winner is O");
                         oScore++;
+                        labelOScore.Text = "O: " + oScore;
                         ClearBoard();
                     }
                 }
@@ -206,12 +208,14 @@ namespace Game_Library.Forms
                 {
                     MessageBox.Show("Winner is O");
                     oScore++;
+                    labelOScore.Text = "O: " + oScore;
                     ClearBoard();
                 }
                 if (btns[1, 3].Text == "O" && btns[2, 2].Text == "O" && btns[3, 1].Text == "O")
                 {
                     MessageBox.Show("Winner is O");
                     oScore++;
+                    labelOScore.Text = "O: " + oScore;
                     ClearBoard();
                 }
             }
@@ -223,12 +227,14 @@ namespace Game_Library.Forms
                     {
                         MessageBox.Show("Winner is X");
                         xScore++;
+                        labelXScore.Text = "X: " + xScore;
                         ClearBoard();
                     }
                     if (btns[1, i].Text == "X" && btns[2, i].Text == "X" && btns[3, i].Text == "X")
                     {
                         MessageBox.Show("Winner is X");
                         xScore++;
+                        labelXScore.Text = "X: " + xScore;
                         ClearBoard();
                     }
                 }
@@ -236,12 +242,14 @@ namespace Game_Library.Forms
                 {
                     MessageBox.Show("Winner is X");
                     xScore++;
+                    labelXScore.Text = "X: " + xScore;
                     ClearBoard();
                 }
                 if (btns[1, 3].Text == "X" && btns[2, 2].Text == "X" && btns[3, 1].Text == "X")
                 {
                     MessageBox.Show("Winner is X");
                     xScore++;
+                    labelXScore.Text = "X: " + xScore;
                     ClearBoard();
                 }
                 if (btnCount > 9)
@@ -262,6 +270,7 @@ namespace Game_Library.Forms
                     btns[i, j].Enabled = true;
                 }
             }
+            btnCount = 1;
         }
     }
 }
