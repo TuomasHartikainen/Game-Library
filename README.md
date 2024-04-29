@@ -1,7 +1,7 @@
 # How to install and use the application
-Firstly download the files from GitHub to your machine. Open and navigate to Setup-SetupFiles folder: ..\Game Library Manager\Setup\Setup-SetupFiles and lauch Setup.exe file. After done with the Setup Wizard open the application on your desktop
+Firstly download the files from GitHub to your machine. Open and navigate to Setup-SetupFiles folder: ..\Game Library Manager\Setup\Setup-SetupFiles and launch Setup.exe file. After done with the Setup Wizard open the application on your desktop
 
-The application is a library with games that you can play. After launching the application you will be directed to the 'store page' where you can add game to your library. To play them just go to User library section and you will see game that you added to the library. Just simply press Play game button. If you want to remove the game, simply press Remove game from your library button. That's it, enjoy! :D
+The application is a library with games that you can play. After launching the application you will be directed to the 'store page' where you can add games to your library. To play them just go to User library section and you will see games that you added to the library. Just simply press Play game button. If you want to remove a game, simply press Remove game from your library button. That's it, enjoy! :D
 ## Screenshots from the application
 Game store
 
@@ -42,4 +42,4 @@ Here are some ideas that I have been thinking of adding in the future if I conti
 1. Save and load system or maybe even a login and account system, so your games added to the library save and don't have to add them again on the next launch
 2. MORE GAMES. Adding more games such as chess, snake, tetris, pong, and much more
 3. Updating already added games. Adding a possibility for two players to play Rock Paper Scissors or adding a possibility to play against a computer in Tic Tac Toe
-4. Complete overhaul of the user interface (I'm not too proud of it as it is right now but it's not the worst either)
+4. Complete overhaul of the user interface (I'm not too proud of it as it is now but it's not the worst either)
