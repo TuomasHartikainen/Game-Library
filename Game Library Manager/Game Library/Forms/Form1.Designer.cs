@@ -38,6 +38,7 @@ namespace Game_Library
             this.button1 = new System.Windows.Forms.Button();
             this.buttonGames = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelShowGames = new System.Windows.Forms.Panel();
             this.pictureBoxTTT = new System.Windows.Forms.PictureBox();
@@ -49,7 +50,6 @@ namespace Game_Library
             this.panelShowLibrary = new System.Windows.Forms.Panel();
             this.labelEmptyLibrary = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelShowGames.SuspendLayout();
@@ -180,6 +180,16 @@ namespace Game_Library
             this.panel2.Size = new System.Drawing.Size(172, 100);
             this.panel2.TabIndex = 1;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("MV Boli", 10F);
+            this.label2.Location = new System.Drawing.Point(7, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(158, 18);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Game Library Manager";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -292,16 +302,6 @@ namespace Game_Library
             this.label3.TabIndex = 0;
             this.label3.Text = "My games";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MV Boli", 10F);
-            this.label2.Location = new System.Drawing.Point(7, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Game Library Manager";
-            // 
             // FormGames
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,6 +311,7 @@ namespace Game_Library
             this.Controls.Add(this.panelShowGames);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormGames";
             this.Text = "Game Library Manager";

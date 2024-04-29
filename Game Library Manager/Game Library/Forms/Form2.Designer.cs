@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.buttonRock = new System.Windows.Forms.Button();
             this.buttonPaper = new System.Windows.Forms.Button();
             this.buttonScissors = new System.Windows.Forms.Button();
@@ -156,6 +157,7 @@
             this.Controls.Add(this.buttonPaper);
             this.Controls.Add(this.buttonRock);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form2";
             this.Text = "Rock paper scissors";
